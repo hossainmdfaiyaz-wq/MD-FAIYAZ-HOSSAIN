@@ -1,0 +1,101 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://i.pinimg.com/1200x/f1/ed/af/f1edaf89fa6320fca25e16efa20d9525.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  position: relative;
+}
+
+.glow {
+  text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6, 0 0 30px #00e6e6;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #00e6e6;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.card-stack {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00e6e6;
+  z-index: 10;
+}
+
+.skills, .quote, .contact {
+  margin: 40px auto;
+  width: 80%;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00e6e6;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  margin: 30px 0;
+}
+
+.social {
+  margin: 0 15px;
+  color: #00e6e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00e6e6;
+}
